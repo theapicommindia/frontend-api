@@ -20,7 +20,7 @@ const organizersData = [
     role: "Organizer",
     imgUrl: "/Aditya Bisht.jpg",
     linkedin: "https://www.linkedin.com/in/aditya894/",
-    about: "Hi, I'm Aditya Bisht, a curious and committed engineering student pursued B.E. in Robotics and Automation, with a passion for software development and community-driven tech innovation. With a strong foundation in C/C++, Python, JavaScript, and modern frameworks like React, Node.js, and Next.js, I thrive at the intersection of software and hardware. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded The API Community, organizing 10+ events to foster collaboration and API literacy among developers."
+    about: "Hi, I'm Aditya Bisht, an API Evangelist with a passion for software development and community driven tech innovation. An Open Source Enthusiast and a Golang Engineer. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded The API Community, organizing 100+ events to foster collaboration and API literacy among developers."
   }
 ];
 
@@ -128,7 +128,7 @@ const TeamPage = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-[#F5F7FA] font-sans selection:bg-[#22B3AD]/30 selection:text-[#0A7294] pb-24">
-      
+
       {/* --- EXTREMELY SOFT BACKGROUND GLOWS --- */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-[#22B3AD]/[0.03] blur-[120px]" />
@@ -136,7 +136,7 @@ const TeamPage = () => {
       </div>
 
       <main className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 pt-28 lg:pt-36">
-        
+
         {/* ==========================================
             PAGE HEADER
             ========================================== */}
@@ -161,7 +161,7 @@ const TeamPage = () => {
         <div className="mb-28 lg:mb-36">
           <div className="flex flex-wrap justify-center items-stretch gap-10 sm:gap-12 lg:gap-16 max-w-5xl mx-auto mt-16">
             {organizersData.map((org, index) => (
-              <div 
+              <div
                 key={org.id}
                 data-aos="fade-up"
                 data-aos-delay={index * 150}
@@ -170,18 +170,18 @@ const TeamPage = () => {
               >
                 {/* Overlapping Profile Image */}
                 <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full -mt-16 mb-6 ring-[6px] ring-white bg-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:ring-teal-50 transition-all duration-500 z-10 overflow-hidden">
-                  <img 
-                    src={org.imgUrl} 
-                    alt={org.name} 
+                  <img
+                    src={org.imgUrl}
+                    alt={org.name}
                     loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                
+
                 <h2 className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-[#0A7294] transition-colors mb-2">
                   {org.name}
                 </h2>
-                
+
                 <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1 rounded-md bg-[#22B3AD]/10 text-[#0A7294] text-[11px] font-bold uppercase tracking-widest mb-5">
                   {org.role}
                 </div>
@@ -221,17 +221,17 @@ const TeamPage = () => {
             ========================================== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-x-6 sm:gap-y-16 max-w-7xl mx-auto mt-12">
           {teamLeadsData.map((lead, index) => (
-            <div 
-              key={lead.id} 
-              data-aos="fade-up" 
+            <div
+              key={lead.id}
+              data-aos="fade-up"
               data-aos-delay={(index % 4) * 100}
               onClick={() => setSelectedMember(lead)}
               className="group bg-white rounded-3xl p-6 pt-0 text-center shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_15px_30px_rgb(10,114,148,0.08)] transition-all duration-300 cursor-pointer flex flex-col items-center mt-10"
             >
               {/* Overlapping Profile Image */}
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full -mt-12 mb-5 relative ring-[4px] ring-white bg-slate-100 shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:ring-teal-50 transition-all duration-300 overflow-hidden z-10">
-                <img 
-                  src={lead.imgUrl} 
+                <img
+                  src={lead.imgUrl}
                   alt={lead.name}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -244,7 +244,7 @@ const TeamPage = () => {
               <p className="text-slate-500 text-[11px] font-bold uppercase tracking-widest mb-4">
                 {lead.role}
               </p>
-              
+
               <div className="mt-auto px-4 py-2 bg-slate-50 group-hover:bg-slate-100 rounded-full text-[11px] font-bold text-[#0A7294] transition-colors flex items-center justify-center gap-1.5 w-full">
                 View Profile <ChevronRight className="w-3.5 h-3.5 opacity-50 group-hover:translate-x-1 group-hover:opacity-100 transition-all" />
               </div>
@@ -260,9 +260,9 @@ const TeamPage = () => {
       <AnimatePresence>
         {selectedMember && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
-            
+
             {/* Modal Backdrop */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
               animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
               exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
@@ -272,7 +272,7 @@ const TeamPage = () => {
             />
 
             {/* Modal Card */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -280,7 +280,7 @@ const TeamPage = () => {
               className="relative w-full max-w-4xl bg-white rounded-[2rem] sm:rounded-[2.5rem] shadow-2xl overflow-hidden z-10 flex flex-col md:flex-row max-h-[85vh] md:max-h-[75vh]"
             >
               {/* Close Button */}
-              <button 
+              <button
                 onClick={() => setSelectedMember(null)}
                 className="absolute top-4 right-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 backdrop-blur-md text-slate-500 hover:bg-slate-100 hover:text-slate-900 transition-colors shadow-sm"
               >
@@ -289,9 +289,9 @@ const TeamPage = () => {
 
               {/* Left Side: Image */}
               <div className="w-full md:w-2/5 h-[280px] sm:h-[320px] md:h-auto relative bg-slate-100 shrink-0">
-                <img 
-                  src={selectedMember.imgUrl} 
-                  alt={selectedMember.name} 
+                <img
+                  src={selectedMember.imgUrl}
+                  alt={selectedMember.name}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-90 md:hidden" />
@@ -299,7 +299,7 @@ const TeamPage = () => {
 
               {/* Right Side: Content */}
               <div className="w-full md:w-3/5 p-6 sm:p-8 lg:p-12 flex flex-col overflow-y-auto">
-                
+
                 <div className="mb-6">
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#22B3AD]/10 text-[#0A7294] text-[10px] font-extrabold uppercase tracking-widest mb-3">
                     {selectedMember.role}
@@ -316,9 +316,9 @@ const TeamPage = () => {
                 </div>
 
                 <div className="mt-auto pt-4 border-t border-slate-100">
-                  <a 
-                    href={selectedMember.linkedin} 
-                    target="_blank" 
+                  <a
+                    href={selectedMember.linkedin}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2.5 w-full sm:w-fit bg-slate-900 hover:bg-[#0A7294] text-white px-8 py-3.5 rounded-xl font-bold text-[14px] transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md"
                   >
