@@ -12,7 +12,7 @@ const organizersData = [
     role: "Organizer",
     imgUrl: "/Shrawan Saproo.jpg",
     linkedin: "https://www.linkedin.com/in/shrawan513/",
-    about: "I'm Shrawan, a Community Builder, DevRel Leader, Technical Content Creator, and Region Lead at AI Camp, passionate about empowering developers and building thriving ecosystems. Currently leading the API Community and serving as a DigitalOcean Wavemaker, I bring 2+ years of experience in developer relations, community growth, and event management."
+    about: "Shrawan Saproo is a DevRel and Community Associate at Nasiko, building in the AI control plane space. He leads developer ecosystems, creates technical content, and drives community growth through events and programs. Also active as an API community lead and DigitalOcean Wavemaker, with 2+ years of hands-on experience in DevRel and builder engagement."
   },
   {
     id: 2,
