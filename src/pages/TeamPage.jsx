@@ -9,7 +9,7 @@ const organizersData = [
   {
     id: 1,
     name: "Shrawan Saproo",
-    role: "Organizer",
+    role: "Founder",
     imgUrl: "/Shrawan Saproo.jpg",
     linkedin: "https://www.linkedin.com/in/shrawan513/",
     about: "Shrawan Saproo is a DevRel and Community Associate at Nasiko, building in the AI control plane space. He leads developer ecosystems, creates technical content, and drives community growth through events and programs. Also active as an API community lead and DigitalOcean Wavemaker, with 2+ years of hands-on experience in DevRel and builder engagement."
@@ -17,7 +17,7 @@ const organizersData = [
   {
     id: 2,
     name: "Aditya Bisht",
-    role: "Organizer",
+    role: "Co-Founder",
     imgUrl: "/Aditya Bisht.jpg",
     linkedin: "https://www.linkedin.com/in/aditya894/",
     about: "Hi, I'm Aditya Bisht, an API Evangelist with a passion for software development and community driven tech innovation. An Open Source Enthusiast and a Golang Engineer. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded The API Community, organizing 100+ events to foster collaboration and API literacy among developers."
