@@ -235,7 +235,7 @@ const TeamPage = () => {
               Delhi Chapter
             </h2>
             <p className="text-base text-slate-500 font-medium leading-relaxed">
-              Leading the charge in the capital building THE API Community in Delhi.
+              Leading the charge in the capital building THE API COMMUNITY in Delhi.
             </p>
           </div>
 
