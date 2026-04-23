@@ -33,7 +33,7 @@ const delhiOrganizersData = [
     role: "Organizer",
     imgUrl: "pihu.jpeg",
     linkedin: "https://www.linkedin.com/pihu1507",
-    about: "Pihu Gupta is a community builder and ecosystem organizer with 3+ years of experience in developer communities . actively working in developer communities across India — organizing events, connecting builders, and helping grow tech ecosystems. Currently I'm involved with multiple communities including Builder’s Space, API Community where I'm an organizer, and I also work as a community lead with Fetch.ai ecosystem initiatives. My main focus has been building strong developer communities and organizing hackathons, builder meetups, and collaborative events across cities like Delhi, Mumbai, Pune, and Bangalore."
+    about: "Pihu Gupta is a community builder and ecosystem organizer with 3+ years of experience in developer communities . actively working in developer communities across India — organizing events, connecting builders, and helping grow tech ecosystems. Currently I'm involved with multiple communities including Builder's Space, API Community where I'm an organizer, and I also work as a community lead with Fetch.ai ecosystem initiatives. My main focus has been building strong developer communities and organizing hackathons, builder meetups, and collaborative events across cities like Delhi, Mumbai, Pune, and Bangalore."
   },
   {
     id: 13,
@@ -235,7 +235,7 @@ const TeamPage = () => {
               Delhi Chapter
             </h2>
             <p className="text-base text-slate-500 font-medium leading-relaxed">
-              Leading the charge in the capital — building the API Community in Delhi.
+              Leading the charge in the capital building THE API Community in Delhi.
             </p>
           </div>
 
