@@ -9,7 +9,7 @@ const organizersData = [
   {
     id: 1,
     name: "Shrawan Saproo",
-    role: "Organizer",
+    role: "Founder",
     imgUrl: "/Shrawan Saproo.jpg",
     linkedin: "https://www.linkedin.com/in/shrawan513/",
     about: "I'm Shrawan, a Community Builder, DevRel Leader, Technical Content Creator, and Region Lead at AI Camp, passionate about empowering developers and building thriving ecosystems. Currently leading the API Community and serving as a DigitalOcean Wavemaker, I bring 2+ years of experience in developer relations, community growth, and event management."
@@ -17,12 +17,34 @@ const organizersData = [
   {
     id: 2,
     name: "Aditya Bisht",
-    role: "Organizer",
+    role: "Co-Founder",
     imgUrl: "/Aditya Bisht.jpg",
     linkedin: "https://www.linkedin.com/in/aditya894/",
     about: "Hi, I'm Aditya Bisht, an API Evangelist with a passion for software development and community driven tech innovation. An Open Source Enthusiast and a Golang Engineer. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded The API Community, organizing 100+ events to foster collaboration and API literacy among developers."
   }
 ];
+
+
+// --- DATA: DELHI ORGANIZERS ---
+const delhiOrganizersData = [
+  {
+    id: 12,
+    name: "Pihu Gupta",
+    role: "Organizer",
+    imgUrl: "pihu.jpeg",
+    linkedin: "https://www.linkedin.com/pihu1507",
+    about: "Pihu Gupta is a community builder and ecosystem organizer with 3+ years of experience in developer communities . actively working in developer communities across India — organizing events, connecting builders, and helping grow tech ecosystems. Currently I'm involved with multiple communities including Builder’s Space, API Community where I'm an organizer, and I also work as a community lead with Fetch.ai ecosystem initiatives. My main focus has been building strong developer communities and organizing hackathons, builder meetups, and collaborative events across cities like Delhi, Mumbai, Pune, and Bangalore."
+  },
+  {
+    id: 13,
+    name: "Priyanshu Pratik",
+    role: "Organizer",
+    imgUrl: "priyanshupratik.jpeg",
+    linkedin: "https://www.linkedin.com/priyanshupratik",
+    about: "Priyanshu Pratik is a community organizer based in Delhi NCR who has organized and volunteered at multiple tech and cultural events, both independently and in collaboration with communities across the region. Currently at Builder's Space, he handles sponsorship outreach, brand partnerships, and everything that keeps an event together behind the scenes.He genuinely enjoys the people side of things,  building relationships, connecting the right folks, and making sure every event leaves an impression."
+  }
+];
+
 
 // --- DATA: TEAM LEADS ---
 const teamLeadsData = [
@@ -204,7 +226,65 @@ const TeamPage = () => {
         </div>
 
         {/* ==========================================
-            SECTION 2: TEAM LEADS HEADER
+            SECTION 2: DELHI CHAPTER ORGANIZERS
+            ========================================== */}
+        <div className="mb-28 lg:mb-36">
+          <div className="text-center max-w-2xl mx-auto mb-20" data-aos="fade-up">
+            <div className="w-12 h-1 bg-slate-200 rounded-full mx-auto mb-6" />
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+              Delhi Chapter
+            </h2>
+            <p className="text-base text-slate-500 font-medium leading-relaxed">
+              Leading the charge in the capital — building the API Community in Delhi.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-stretch gap-10 sm:gap-12 lg:gap-16 max-w-5xl mx-auto mt-16">
+            {delhiOrganizersData.map((org, index) => (
+              <div
+                key={org.id}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+                className="group relative w-full max-w-[340px] bg-white rounded-3xl p-8 pt-0 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(10,114,148,0.08)] transition-all duration-500 flex flex-col items-center mt-12 cursor-pointer"
+                onClick={() => setSelectedMember(org)}
+              >
+                {/* Overlapping Profile Image */}
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full -mt-16 mb-6 ring-[6px] ring-white bg-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.08)] group-hover:ring-teal-50 transition-all duration-500 z-10 overflow-hidden">
+                  <img
+                    src={org.imgUrl}
+                    alt={org.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+
+                <h2 className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-[#0A7294] transition-colors mb-2">
+                  {org.name}
+                </h2>
+
+                <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1 rounded-md bg-[#22B3AD]/10 text-[#0A7294] text-[11px] font-bold uppercase tracking-widest mb-5">
+                  {org.role}
+                </div>
+
+                <p className="text-sm text-slate-500 leading-relaxed line-clamp-3 mb-6">
+                  {org.about}
+                </p>
+
+                <div className="mt-auto pt-4 border-t border-slate-100 w-full flex items-center justify-center gap-4">
+                  <span className="text-[#0A7294] text-xs font-bold uppercase tracking-wider group-hover:text-[#22B3AD] transition-colors">
+                    Read Bio
+                  </span>
+                  <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-[#0A7294] transition-colors duration-300">
+                    <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-white" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ==========================================
+            SECTION 3: TEAM LEADS HEADER
             ========================================== */}
         <div className="text-center max-w-2xl mx-auto mb-20" data-aos="fade-up">
           <div className="w-12 h-1 bg-slate-200 rounded-full mx-auto mb-6" />
