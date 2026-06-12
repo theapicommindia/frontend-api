@@ -20,7 +20,7 @@ const organizersData = [
     role: "Co-Founder",
     imgUrl: "/Aditya Bisht.jpg",
     linkedin: "https://www.linkedin.com/in/aditya894/",
-    about: "Hi, I'm Aditya Bisht, an API Evangelist with a passion for software development and community driven tech innovation. An Open Source Enthusiast and a Golang Engineer. I enjoy exploring both front-end and back-end technologies, crafting solutions that are not only functional but also meaningful. Beyond development, I'm deeply invested in community building. I co-founded The API Community, organizing 100+ events to foster collaboration and API literacy among developers."
+    about: "I'm Aditya Bisht, an API Evangelist with a passion for software development and community driven tech innovation. I'm an Open Source Enthusiast and a Golang Engineer who enjoys working with deep tech startups. Beyond development, I'm deeply invested in community building — I co-founded The API Community, organizing 100+ events to foster collaboration and API literacy among developers. I'm also building a startup at the intersection of AR/VR tech fusion, exploring how immersive technologies can create new dimensions of interaction and innovation."
   }
 ];
 
